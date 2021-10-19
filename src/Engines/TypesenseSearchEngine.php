@@ -223,7 +223,7 @@ class TypesenseSearchEngine extends Engine
         $documents = $this->typesense->getCollectionIndex($builder->model)
                                      ->getDocuments();
         if ($builder->callback) {
-            return call_user_func($builder->callback, $documents, $builder->query, $options);
+            return call_user_func($builder->callback, $builder, $documents, $builder->query, $options);
         }
 
         return $documents->search($options);
