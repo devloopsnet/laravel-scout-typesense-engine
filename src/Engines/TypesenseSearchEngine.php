@@ -132,17 +132,17 @@ class TypesenseSearchEngine extends Engine
     /**
      * @param \Laravel\Scout\Builder $builder
      * @param int                    $page
-     * @param int                    $perPage
+     * @param int|null               $perPage
      *
      * @return array
      */
-    private function buildSearchParams(Builder $builder, int $page, int $perPage): array
+    private function buildSearchParams(Builder $builder, int $page, ?int $perPage): array
     {
         $params = [
             'q'                   => $builder->query,
             'query_by'            => implode(',', $builder->model->typesenseQueryBy()),
             'filter_by'           => $this->filters($builder),
-            'per_page'            => $perPage,
+            'per_page'            => $perPage ?? 10,
             'page'                => $page,
             'highlight_start_tag' => $this->startTag,
             'highlight_end_tag'   => $this->endTag,
