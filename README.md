@@ -1,3 +1,10 @@
+<h3>⚠️ This project has moved to the official Typesense Github org: https://github.com/typesense/laravel-scout-typesense-driver.
+It was adopted as the official Typesense PHP client on Dec 2021 and ongoing development will take place there.</h3>
+<h4>Please upgrade to the `typesense/laravel-scout-typesense-driver` composer package to receive new updates.</h4>
+
+<h4>The rest of this Readme file is kept as is for posterity.</h4>
+
+
 <p align="center">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/devloopsnet/laravel-typesense.svg?style=for-the-badge)](https://packagist.org/packages/devloopsnet/laravel-typesense) ![Postcardware](https://img.shields.io/badge/Postcardware-%F0%9F%92%8C-197593?style=for-the-badge)
